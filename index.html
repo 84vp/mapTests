@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My map progect</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+          integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+          crossorigin=""/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="nav">
+        <ul class="nav-block">
+            <li class="nav-item">link</li>
+            <li class="nav-item">link</li>
+            <li class="nav-item">link</li>
+            <li class="nav-item">link</li>
+            <li class="nav-item">link</li>
+        </ul>
+    </div>
+</div>
+<section class="map-section">
+    <div class="container">
+        <div class="form-wrapper">
+            <form id="markersForm">
+                <!--ID:-->
+                <!--<input class="id-marker" name="markerId">-->
+                Marker title:
+                <input type="text" name="title">
+                Lat:
+                <input type="number" name="lat" maxlength="8" step="0.0001">
+                Lng:
+                <input type="number" name="lng" maxlength="8" step="0.0001">
+
+            </form>
+            <button  id="addMarkerBtn" onclick="onMapClickNew()">add marker</button>
+            <button  class="get-markers">Get markers info</button>
+            <button  class="get-polileng">create polilang</button>
+        </div>
+        <div id="mapid"></div>
+    </div>
+
+</section>
+
+
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
+        integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
+        crossorigin=""></script>
+<script src="maps_controls.js"></script>
+
+</body>
+</html>

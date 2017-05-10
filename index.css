@@ -1,0 +1,49 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+.nav-block {
+    display: inline-block;
+    list-style: none;
+}
+.nav-block .nav-item {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    background: #a9a9a9;
+    transition: background 0.5s;
+}
+.nav-item:hover {
+    background: #e5f287;
+}
+.nav-item +.nav-item {
+    margin-left: 10px;
+}
+#mapid {
+    height: 600px;
+}
+.form-wrapper {
+    margin: 15px 0;
+}
+.newIconMarker {
+    margin-left: -20px !important;
+    margin-top: -20px !important;
+    opacity: 0.8;
+    text-align: center;
+    background: rgb(255, 152, 0);
+    height: 15px;
+    width: 15px;
+    padding: 8px;
+    border: 9px solid rgba(205, 220, 57, 0.69);
+    border-radius: 50%;
+}
+.newIconMarker > div {
+    color: white;
+   text-align: center;
+    line-height: 1.2;
+}
+form {
+    margin:20px 0;
+}
