@@ -47,3 +47,10 @@
 form {
     margin:20px 0;
 }
+button {
+    text-transform: uppercase;
+    height: 40px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+button:focus
